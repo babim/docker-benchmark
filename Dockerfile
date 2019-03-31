@@ -1,6 +1,6 @@
 FROM babim/alpinebase:3.9
 
-ENV SOFT wrk2
+ENV SOFT ab
 
 # download option
 RUN apk add --no-cache wget bash && cd / && wget --no-check-certificate https://raw.githubusercontent.com/babim/docker-tag-options/master/z%20SCRIPT%20AUTO/option.sh && \
@@ -10,5 +10,5 @@ RUN apk add --no-cache wget bash && cd / && wget --no-check-certificate https://
 RUN wget --no-check-certificate -O - https://raw.githubusercontent.com/babim/docker-tag-options/master/z%20benchmark%20install/${SOFT}_install.sh | bash
 
 # run
-ENTRYPOINT ["wrk2"]
+ENTRYPOINT ["ab"]
 
