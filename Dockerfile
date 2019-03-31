@@ -1,4 +1,4 @@
-FROM babim/alpinebase:3.9
+FROM babim/alpinebase:3.9-x86
 
 ENV SOFT wrk2
 
